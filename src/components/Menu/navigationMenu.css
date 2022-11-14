@@ -1,0 +1,17 @@
+.navlist{
+    list-style: none;
+}
+.droplist{
+    list-style: none;
+    display: none;
+}
+.navlist>li:hover .droplist{
+    color:rgb(29, 129, 183);
+    display: block;
+}
+.navlist>li{
+    margin:20px;
+}
+.droplist>li{
+    margin-top: 10px;
+}

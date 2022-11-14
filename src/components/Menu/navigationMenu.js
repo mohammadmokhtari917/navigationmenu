@@ -1,14 +1,16 @@
 import React from 'react';
+import './navigationMenu.css';
 
-function navigationMenu() {
+function navigationMenu({navlist}) {
     return (
     <React.Fragment> 
-        <p>navigationMenu</p>
-        <ul>
-            <li>GENERAL</li>
-            <li>PLANT</li>
-            <li>USER</li>
-        </ul>
+        <li className='navlist'>{navlist.map(el=>(
+                <li>{el.name}
+                <li className='droplist'>{ el.drop&&el.drop.map(el=><li>{el}</li>) }</li>
+                </li>
+            ))}
+                 
+        </li>
     </React.Fragment>
     )
 }
