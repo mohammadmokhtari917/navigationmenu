@@ -1,11 +1,11 @@
 import React from 'react';
 
-function res({name}) {
+function Equipments() {
     return (
     <React.Fragment> 
-        <p>{name}</p>
+        <p>Equipments</p>
     </React.Fragment>
     )
 }
 
-export default res
+export default Equipments

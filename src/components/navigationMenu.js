@@ -1,6 +1,5 @@
 import React from 'react';
 import './navigationMenu.css';
-import ReactDOM from 'react-dom/client';
 
 function navigationMenu({navlist}) {
     return (
