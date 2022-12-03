@@ -15,7 +15,7 @@ import Plant from '../src/components/Menu/plant';
 // This information is taken from the database
 const navitems=[
   {name:'GENERAL',drop:['Pictures','Standards','TagSetup','UoM','Equipments']},
-  {name:'PLANT',drop:['plant/db1','plant/db2','plant/db3']},
+  {name:'PLANT',drop:['db1','db2','db3']},
   {name:'USER',drop:['Security','Shift']}
                ]
 
@@ -36,7 +36,7 @@ function App() {
           <Route path='/TagSetup' element={<TagSetup />}/>
           <Route path='/UoM' element={<UoM />}/>
           <Route path='/Equipments' element={<Equipments />}/>
-          <Route path="/plant/*" element={<Plant name={window.location.href}/>}/>
+          <Route path="/Plant/*" element={<Plant name={window.location.href}/>}/>
           <Route path='/Security' element={<Security />}/>
           <Route path='/Shift' element={<Shift />}/>
         </Routes>
